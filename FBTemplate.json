@@ -1,0 +1,17 @@
+{
+  "id": "85f8fc93-7cd5-442a-a94d-9f209c6efca5",
+  "version": "2.0",
+  "name": "Remove_Member_From_FBGroup",
+  "url": "https://www.facebook.com",
+  "tests": [],
+  "suites": [{
+    "id": "bffaa8e3-8270-4339-adb4-bcb692f8cda8",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://www.facebook.com/"],
+  "plugins": []
+}

@@ -1,0 +1,140 @@
+{
+    "id": "3a0687d4-e0dd-415d-9693-302c352c77fd",
+    "name": "Remove_@name",
+    "commands": [{
+      "id": "0d5e647b-39bd-449c-8ba0-d4efba7747be",
+      "comment": "",
+      "command": "open",
+      "target": "/groups/minonlifeselect/members/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6d4126f6-4f59-4d64-b897-be309a59fdac",
+      "comment": "",
+      "command": "store",
+      "target": "@name",
+      "targets": [],
+      "value": "member"
+    }, {
+      "id": "63031828-0895-47e4-8e6c-76d569b1de9a",
+      "comment": "",
+      "command": "echo",
+      "target": "member：${member}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e86ecb17-f164-4a51-9b58-5bf3f3ae52fd",
+      "comment": "",
+      "command": "type",
+      "target": "css=.\\_357u > .\\_58al",
+      "targets": [
+        ["css=.\\_357u > .\\_58al", "css:finder"],
+        ["xpath=//input[@value='Agnes Lo']", "xpath:attributes"],
+        ["xpath=//div[@id='groupsMemberBrowser']/div/div/div[2]/div/div/label/input", "xpath:idRelative"],
+        ["xpath=//label/input", "xpath:position"]
+      ],
+      "value": "${member}"
+    },
+    {
+        "id": "7235e27c-a383-4c6e-9334-2d816a4e877b",
+        "comment": "",
+        "command": "waitForElementPresent",
+        "target": "xpath=//div[@id='groupsMemberSection_search']/div/span/span",
+        "targets": [],
+        "value": "1500"
+      }, {
+      "id": "a370d01f-a118-4de0-969e-de82edea9835",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=#groupsMemberSection_search .\\_1oqv",
+      "targets": [],
+      "value": "count"
+    }, {
+      "id": "351d29dc-e60a-48c3-bab4-0a4a52ab377c",
+      "comment": "",
+      "command": "echo",
+      "target": "count ${count}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5de069dd-203c-4099-b7db-62c0d1640d29",
+      "comment": "",
+      "command": "if",
+      "target": "${count}==1",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "88bbd9bf-6b0d-4681-b8fb-f94810fe5b68",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[3]/div/div[2]/div/div/div/div/div[2]/ul/div/div/div/div[2]/div/div[2]/span/div/button",
+      "targets": [
+        ["id=u_9_5", "id"],
+        ["css=#u_9_5", "css:finder"],
+        ["xpath=//button[@id='u_9_5']", "xpath:attributes"],
+        ["xpath=//div[@id='u_9_4']/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div[2]/div/div/div/div/div[2]/ul/div/div/div/div[2]/div/div[2]/span/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4894213d-8150-4603-ba87-871647b526a2",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//li[4]/a/span/span",
+      "targets": [
+        ["css=.\\_54ne .\\_54nh", "css:finder"],
+        ["xpath=//div[@id='u_c_0']/div/ul/li[4]/a/span/span", "xpath:idRelative"],
+        ["xpath=//li[4]/a/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "702ee54f-67b6-4e15-8112-e7a3be4280da",
+      "comment": "",
+      "command": "check",
+      "target": "name=block_user",
+      "targets": [
+        ["id=u_i_5", "id"],
+        ["name=block_user", "name"],
+        ["css=#u_i_5", "css:finder"],
+        ["xpath=//input[@id='u_i_5']", "xpath:attributes"],
+        ["xpath=//form[@id='u_i_6']/div[2]/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bc874d55-f416-428d-ac99-6dae7812d91c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.layerConfirm",
+      "targets": [],
+      "value": ""
+    }, {
+        "id": "1d3f47f6-f5b3-4c72-b0b1-70a975d97d73",
+        "comment": "",
+        "command": "echo",
+        "target": "RemoveSuccess",
+        "targets": [],
+        "value": ""
+      }, {
+      "id": "01072697-36ce-468a-a44e-e439a7f29779",
+      "comment": "",
+      "command": "elseIf",
+      "target": "${count}>1",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cc941797-7c7b-42e4-aeea-6149981c7966",
+      "comment": "",
+      "command": "echo",
+      "target": "MultipleMember：${member} ",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "53e47953-0cd7-4c24-b030-19803fbfff33",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }
